@@ -6,9 +6,14 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const pixrem = require('gulp-pixrem');
 const del  = require('del');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const sourcemaps = require('gulp-sourcemaps');
+
+const destPath = 'public';
 
 gulp.task('clean', function(){
-    return del('public');
+    return del(destPath);
 });
 
 gulp.task('sass', function () {
@@ -19,14 +24,19 @@ gulp.task('sass', function () {
             style: 'compressed'
         }).on('error', sass.logError))
         .pipe(pixrem({ rootValue: '16px' }))
-        .pipe(gulp.dest('public'));
+        .pipe(gulp.dest(destPath));
 });
 
 gulp.task('assets', function () {
     return gulp.src('source/assets/**')
-        .pipe(gulp.dest('public'));
+        .pipe(gulp.dest(destPath));
 });
 
-gulp.task('default', gulp.series('clean', gulp.parallel('sass', 'assets')));
+gulp.task('js', function () {
+    return gulp.src('source/js/**')
+        .pipe(gulp.dest(destPath + '/js'));
+});
 
-gulp.watch('View/default/css', gulp.series('sass'));
+gulp.task('default', gulp.series('clean', gulp.parallel('sass', 'assets', 'js')));
+
+gulp.watch('source/css', gulp.series('sass'));

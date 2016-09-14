@@ -1,0 +1,197 @@
+.header {
+  background: #191E25 url('/public/images/pattern.png') repeat;
+  position: relative;
+  padding-top: 1px;
+  min-height: 160px;
+  padding-bottom: 16px;
+
+  &.header-about {
+    background: none;
+    height: 550px;
+    color: #fff;
+
+    .header-title {
+      max-width: 850px;
+
+      padding-top: 40px;
+      margin: 0 auto;
+
+      text-align: center;
+      font-size: 1.25rem;
+
+      @media (min-width: 544px) {
+        padding-top: 50px;
+        font-size: 1.5rem;
+      }
+
+      @media (min-width: 768px) {
+        padding-top: 120px;
+        font-size: 2rem;
+      }
+
+      @media (min-width: 992px) {
+        padding-top: 200px;
+      }
+    }
+  }
+
+  &.header-promo {
+    background: none;
+    min-height: 900px;
+
+    @media (min-width: 992px) {
+      height: 100vh;
+    }
+  }
+}
+
+.header-nav {
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
+.logo {
+  @include clearfix();
+
+  padding-top: 8px;
+  position: relative;
+  text-align: center;
+
+  @media (min-width: 992px) {
+    width: 220px;
+    margin: 0 auto;
+  }
+
+  .nav {
+
+    &.nav-left {
+      margin-top: 20px;
+    }
+
+    @media (min-width: 768px) {
+      display: inline-block;
+      margin-top: 20px;
+
+      &.nav-right {
+        margin-left: 50px;
+      }
+
+      &.nav-left {
+        margin-top: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      margin-top: 0;
+      display: block;
+      position: absolute;
+      top: 66px;
+
+      &.nav-left {
+        left: -250px;
+      }
+
+      &.nav-right {
+        left: 220px;
+      }
+    }
+
+    font-size: 18px;
+    white-space: nowrap;
+
+    a {
+      display: block;
+
+      @media (min-width: 768px) {
+        display: inline-block;
+        margin-left: 50px;
+      }
+
+      padding: 6px 0 2px;
+
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &.active {
+        border-bottom: 3px solid $brand-primary;
+      }
+    }
+  }
+}
+
+.logo-icon {
+  text-align: center;
+}
+
+.sales {
+  border-left: 3px solid $brand-primary;
+
+
+  padding: 1px 0 0 8px;
+  margin: 26px 0 0 26px;
+
+  @media (min-width: 768px) {
+    height: 40px;
+
+    display: block;
+    position: absolute;
+    right: 25px;
+  }
+}
+
+.sales-label {
+  margin-top: -6px;
+  display: none;
+
+  color: #bbb;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.sales-phone {
+  display: block;
+  height: 30px;
+
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.header-mobile-nav {
+  .sales {
+
+    border: none;
+    border-top: 1px solid $gray-lighter;
+    position: relative;
+    top: 0; right: 0; left: 0;
+    margin: 10px 0 0;
+    padding: 20px 0 0;
+
+    height: auto;
+
+    .sales-phone {
+      a {
+        color: #000;
+      }
+    }
+  }
+}

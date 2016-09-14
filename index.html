@@ -1,11 +1,666 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Купить уголь для кальяна | baubau-coal.com</title>
     <link rel="stylesheet" href="public/core.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="public/js/plugins/jquery.easing-1.3.js"></script>
+    <script src="public/js/plugins/jquery.royalslider.min.js"></script>
+    <script src="public/js/plugins/tether.min.js"></script>
+    <script src="public/js/plugins/bootstrap.min.js"></script>
+    <script src="public/js/plugins/parallax.js"></script>
+    <script src="public/js/index.js"></script>
 </head>
 <body>
+    <header class="header header-promo">
+        <div class="sales">
+            <div class="sales-label">Отдел продаж</div>
+            <div class="sales-phone">
+                <a href="tel:+78125215151">+7 812 521 51 51</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-nav">
 
+                <div class="logo">
+                    <div class="logo-icon">
+                        <a href="/" class="logo">
+                            <img src="public/images/logo.png" alt="" width="200">
+                        </a>
+                    </div>
+                    <div class="nav nav-left">
+                        <a href="#" class="active">Купить</a>
+                        <a href="#">О продукте</a>
+                    </div>
+                    <nav class="nav nav-right">
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="promo-cover"></div>
+            <div class="promo">
+                <div class="promo-head">
+                    <div class="promo-stars">
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                    </div>
+                    <h1 class="promo-title display-4">Уголь для кальяна <strong>премиум качества</strong></h1>
+                    <div class="promo-subtitle">Прямо из Индонезии</div>
+                </div>
+                <div class="promo-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box">
+                                <div class="box-icon">
+                                    <img src="public/images/natural.png" alt="100% натуральный" height="70">
+                                </div>
+                                <h4 class="box-title">100% натуральный</h4>
+                                <p class="box-description">Изготавливается из кокосовой скорлупы и клейкого вещества Патока</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <div class="box-icon">
+                                    <img src="public/images/without-smelt.png" alt="Без запаха и привкуса" height="72">
+                                </div>
+                                <h4 class="box-title">Без запаха и привкуса</h4>
+                                <p class="box-description">Производится без добавления древесины и какой-либо химии</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <div class="box-icon">
+                                    <img src="public/images/burn.png" alt="Горит 90 минут" height="60">
+                                </div>
+                                <h4 class="box-title">Горит 90 минут</h4>
+                                <p class="box-description">Тлеет медленее обычных углей и горит более часа</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo-foot">
+                    <p class="lead">
+                        Кокосовый уголь , относящийся к категории «Премиум», производится из кокосовой стружки на фабриках Индонезии. Благодаря своим уникальным физическим и потребительским свойствам, уголь BAU-BAU является одним из самых популярных в мире кальянных углей.
+                    </p>
+                </div>
+                <div class="promo-continue">
+                    <img src="public/images/arrow-down.png" alt="Arrow down" height="50">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="middle">
+        <div class="container">
+            <div class="product">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="product-gallery" id="product-gallery">
+                            <div class="product-gallery-images">
+                                <div class="royalSlider">
+                                    <div class="product-gallery-item active">
+                                        <img src="public/images/product/product-image-1.jpg" alt="Уголь для кальяна">
+                                    </div>
+                                    <div class="product-gallery-item">
+                                        <img src="public/images/product/product-image-2.jpg" alt="Уголь для кальяна">
+                                    </div>
+                                    <div class="product-gallery-item">
+                                        <img src="public/images/product/product-image-3.jpg" alt="Уголь для кальяна">
+                                    </div>
+                                    <div class="product-gallery-item">
+                                        <img src="public/images/product/product-image-4.jpg" alt="Уголь для кальяна">
+                                    </div>
+                                    <div class="product-gallery-item">
+                                        <img src="public/images/product/product-image-5.jpg" alt="Уголь для кальяна">
+                                    </div>
+                                    <div class="product-gallery-item">
+                                        <img src="public/images/product/product-image-6.jpg" alt="Уголь для кальяна">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-gallery-description hidden-md-up text-muted">
+                                <small>Используйте касания влево-вправо</small>
+                            </div>
+                            <div class="product-gallery-thumbnails hidden-sm-down">
+                                <ul>
+                                    <li data-slide-to="1">
+                                        <img src="public/images/product/product-thumbnail-1.jpg" alt="">
+                                    </li>
+                                    <li data-slide-to="2">
+                                        <img src="public/images/product/product-thumbnail-2.jpg" alt="">
+                                    </li>
+                                    <li data-slide-to="3">
+                                        <img src="public/images/product/product-thumbnail-3.jpg" alt="">
+                                    </li>
+                                    <li data-slide-to="4">
+                                        <img src="public/images/product/product-thumbnail-4.jpg" alt="">
+                                    </li>
+                                    <li data-slide-to="5">
+                                        <img src="public/images/product/product-thumbnail-5.jpg" alt="">
+                                    </li>
+                                    <li data-slide-to="6">
+                                        <img src="public/images/product/product-thumbnail-6.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="m-t-2 hidden-md-up"></div>
+                        <h3 class="product-title">Купить уголь для кальяна Bau Bau</h3>
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label-upper text-muted">Выберите фасовку</label>
+                                <div class="choose-kind">
+                                    <div class="row row-sm">
+                                        <div class="col-xl-6">
+                                            <button class="btn btn-secondary active" type="button">
+                                                <h4 class="choose-kind-title">Классика (22x22x22)</h4>
+                                                <span class="choose-kind-count">
+                                                    <strong class="text-primary">18 упаковок</strong><br>
+                                                    <span class="text-muted">Упаковка – 1кг или 96 кубиков</span>
+                                                </span>
+                                                <div class="choose-kind-price h3">190 руб.</div>
+                                            </button>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <button class="btn btn-secondary" type="button">
+                                                <h4 class="choose-kind-title">Большие (25x25x25)</h4>
+                                                <span class="choose-kind-count">
+                                                    <strong class="text-primary">18 упаковок</strong><br>
+                                                    <span class="text-muted">Упаковка – 1кг или 72 кубиков</span>
+                                                </span>
+                                                <div class="choose-kind-price h3">250 руб.</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group m-t-2">
+                                <label class="form-label-upper text-muted">Выберите количество</label>
+                                <div class="choose-count">
+                                    <div class="choose-count-input">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="0">
+                                            <span class="input-group-addon">шт.</span>
+                                        </div>
+                                    </div>
+                                    <div class="choose-count-btns">
+                                        <button class="btn btn-secondary" type="button">
+                                            <i class="mdi mdi-plus"></i>
+                                            1
+                                        </button>
+                                        <button class="btn btn-secondary" type="button">
+                                            <i class="mdi mdi-plus"></i>
+                                            10
+                                        </button>
+                                        <button class="btn btn-secondary" type="button">
+                                            <i class="mdi mdi-plus"></i>
+                                            100
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="text-muted">1 шт. – набор из 18 упаковок</p>
+                            </div>
+                            <div class="form-group product-cost">
+                                <label class="form-label-upper">Стоимость без учета доставки</label>
+                                <div class="product-cost-inner">
+                                    <div class="product-cost-value">
+                                        <strong class="h1">38 000</strong> руб.
+                                    </div>
+                                    <div class="product-cost-discount">(экономия 2 600 руб.)</div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="calc-bar">
+                            <div class="calc-btn">
+                                <button class="btn btn-lg btn-primary" type="button">Рассчитать стоимость с доставкой и заказать</button>
+                            </div>
+                            <div class="calc-description">
+                                <i class="mdi mdi-truck"></i>
+                                Доставляем уголь по всей России
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-t-3">
+                    <div class="col-md-6 col-lg-5">
+                        <h3>Характеристики</h3>
+                        <table class="product-props">
+                            <tr>
+                                <td>Размер</td>
+                                <td>25 х 25 х 15</td>
+                            </tr>
+                            <tr>
+                                <td>Вес</td>
+                                <td>1 кг</td>
+                            </tr>
+                            <tr>
+                                <td>Количество</td>
+                                <td>108  шт</td>
+                            </tr>
+                            <tr>
+                                <td>Страна</td>
+                                <td>Индонезия</td>
+                            </tr>
+                            <tr>
+                                <td>Качество</td>
+                                <td>Премиум</td>
+                            </tr>
+                            <tr>
+                                <td>Длительность горения угля </td>
+                                <td>1.5 часов</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6 col-lg-7">
+                        <div class="m-t-2 hidden-md-up"></div>
+                        <h3>Описание угля</h3>
+                        <p>Вот и Эмбер, создатель этого угля, решил, что может внести свой вклад в развитие кальянного рынка. </p>
+                        <p>Больше года путем экспериментов с сырьем, составом и методами прессовки он искал идеальный рецепт идеального угля. И, надо отдать должное, его труды не прошли напрасно!</p>
+                        <p>Сегодня Bau Bau это не только собственный завод по производству угля в Индонезии, но и несколько собственных кокосовых плантаций. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section section-steps">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title h1">Схема работы</h2>
+                </div>
+                <div class="section-body">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="box">
+                                <div class="box-icon">
+                                    <img src="public/images/order.png" alt="Оформление заказа" height="80">
+                                </div>
+                                <h4 class="box-title">Оформление заказа</h4>
+                                <p class="box-description">На странице товара оформляете заказ, выбрав тип угля, его количество и адрес доставки</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="box">
+                                <div class="box-icon">
+                                    <img src="public/images/processing.png" alt="Обработка" height="80">
+                                </div>
+                                <h4 class="box-title">Обработка</h4>
+                                <p class="box-description">С вами связывается наш менеджер, подтверждает заказ и выставляет счёт на оплату</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="box">
+                                <div class="box-icon">
+                                    <img src="public/images/payment.png" alt="Оплата" height="75">
+                                </div>
+                                <h4 class="box-title">Оплата</h4>
+                                <p class="box-description">Оплачиваете товар выбранным способом и отправляете нам фотографию квитанции</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="box">
+                                <div class="box-icon">
+                                    <img src="public/images/delivery.png" alt="Доставка" height="66">
+                                </div>
+                                <h4 class="box-title">Доставка</h4>
+                                <p class="box-description">После получения оплаты, мы отправляем товар на указанный адрес и ждем доставки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="step step-1">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="step step-2">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="step step-3">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="step step-5">
+                                    <span></span>
+                                    <div class="step-fire"></div>
+                                </div>
+                                <div class="step step-4">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steps-dash"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="calc-bar wide">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="calc-btn">
+                            <button class="btn btn-lg btn-primary" type="button" data-toggle="modal" data-target="#orderModal">Рассчитать стоимость с доставкой и заказать</button>
+                        </div>
+                        <div class="calc-description">
+                            <i class="mdi mdi-truck"></i>
+                            Доставляем уголь по всей России
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-6">
+                        <div class="calc-call">
+                            <div class="calc-call-label">Остались вопросы? Позвоните нам</div>
+                            <strong class="calc-call-value display-4">+7 812 521 51 51</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright pull-lg-left">© 2016 Кальянные угли BAU BAU</div>
+                <br class="hidden-md-down hidden-xl-up">
+                <div class="pull-lg-left footer-nav">
+                    <nav class="nav nav-inline">
+                        <a href="#">Купить</a>
+                        <a href="#">О продукте</a>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Контакты</a>
+                    </nav>
+                </div>
+                <div class="vk-group pull-lg-right">
+                    <a href="https://vk.com" class="btn btn-vk" target="_blank">
+                        <i class="mdi mdi-vk"></i>
+                        Группа Вконтакте
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade calc-modal" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="#">
+                    <div class="modal-header">
+                        <ul class="modal-steps">
+                            <li class="active">
+                                <h2 class="modal-title" id="orderModalTitle">1. Расчет стоимости</h2>
+                            </li>
+                            <li>
+                                <div class="mdi mdi-chevron-right"></div>
+                            </li>
+                            <li>
+                                2. Оформление заказа
+                            </li>
+                            <li>
+                                <div class="mdi mdi-chevron-right"></div>
+                            </li>
+                            <li>
+                                <i class="mdi mdi-check"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label class="form-label-upper text-muted">Выберите фасовку</label>
+                            <div class="choose-kind">
+                                <div class="row row-sm">
+                                    <div class="col-xl-6">
+                                        <button class="btn btn-secondary active" type="button">
+                                            <h4 class="choose-kind-title">Классика (22x22x22)</h4>
+                                            <div class="choose-kind-count">
+                                                <strong class="text-danger">18 упаковок</strong><br>
+                                                <span class="text-muted">Упаковка – 1кг или 96 кубиков</span>
+                                            </div>
+                                            <div class="choose-kind-price h3">190 руб.</div>
+                                        </button>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <button class="btn btn-secondary" type="button">
+                                            <h4 class="choose-kind-title">Большие (25x25x25)</h4>
+                                            <span class="choose-kind-count">
+                                                <strong class="text-danger">18 упаковок</strong><br>
+                                                <span class="text-muted">Упаковка – 1кг или 72 кубиков</span>
+                                            </span>
+                                            <div class="choose-kind-price h3">250 руб.</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group m-t-2">
+                            <label class="form-label-upper text-muted">Выберите количество</label>
+                            <div class="choose-count">
+                                <div class="choose-count-input">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="0" required>
+                                        <span class="input-group-addon">шт.</span>
+                                    </div>
+                                </div>
+                                <div class="choose-count-btns">
+                                    <button class="btn btn-secondary" type="button">
+                                        <i class="mdi mdi-plus"></i>
+                                        1
+                                    </button>
+                                    <button class="btn btn-secondary" type="button">
+                                        <i class="mdi mdi-plus"></i>
+                                        10
+                                    </button>
+                                    <button class="btn btn-secondary" type="button">
+                                        <i class="mdi mdi-plus"></i>
+                                        100
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="text-muted">1 шт. – набор из 18 упаковок</p>
+                        </div>
+                        <div class="form-group row row-sm m-t-2">
+                            <div class="col-xs-12">
+                                <label class="form-label-upper text-muted">Выберите тип и адрес доставки</label>
+                            </div>
+                            <label class="col-sm-3 col-form-label text-xs-right">Тип доставки</label>
+                            <div class="col-sm-9">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary active">До терминала</button>
+                                    <button type="button" class="btn btn-secondary">До адреса</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row row-sm">
+                            <label class="col-sm-3 col-form-label text-xs-right">Адрес</label>
+                            <div class="col-sm-9">
+                                <table class="choose-address">
+                                    <tr>
+                                        <td colspan="3">
+                                            <select name="city" class="form-control" required>
+                                                <option value="1">Санкт-Петербург</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control" name="index" placeholder="Индекс" required>
+                                        </td>
+                                        <td colspan="2">
+                                            <input type="text" class="form-control" name="street" placeholder="Улица" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control" name="house" placeholder="Дом" required>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" name="housing" placeholder="Корпус / Литер">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" name="office" placeholder="Офис / Помещение">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="calc-prices">
+                            <table>
+                                <tr>
+                                    <td class="text-muted">Стоимость угля</td>
+                                    <td>
+                                        <strong class="lead">38 000 руб.</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">Стоимость доставки</td>
+                                    <td>
+                                        <!--<strong class="lead">1 200 руб.</strong>-->
+                                        <span class="text-muted">Считаем..</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lead">Общая стоимость</td>
+                                    <td>
+                                        <h2>38 000 руб.</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-xs-right">
+                                        <strong class="text-success">(экономия 2 600 руб.)</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button type="button" class="btn btn-secondary btn-lg hidden-xs-down" data-dismiss="modal">Закрыть окно</button>
+                        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal" data-toggle="modal" data-target="#confirmModal">Перейти к оформлению заказа</button>
+                        <button type="button" class="btn btn-secondary btn-lg hidden-sm-up" data-dismiss="modal">Закрыть окно</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade calc-modal" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="#">
+                    <div class="modal-header">
+                        <ul class="modal-steps">
+                            <li>
+                                1. Расчет стоимости
+                            </li>
+                            <li>
+                                <div class="mdi mdi-chevron-right"></div>
+                            </li>
+                            <li class="active">
+                                <h2 class="modal-title" id="confirmModalTitle">2. Оформление заказа</h2>
+                            </li>
+                            <li>
+                                <div class="mdi mdi-chevron-right"></div>
+                            </li>
+                            <li>
+                                <i class="mdi mdi-check"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Контактное лицо</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Электронная почта</label>
+                            <div class="row row-sm">
+                                <div class="col-md-7">
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="col-md-5">
+                                    <small class="form-text text-muted m-t-0">На почту придёт информация о заказе и счёт на оплату</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон</label>
+                            <div class="row row-sm">
+                                <div class="col-md-7">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">+7</span>
+                                        <input type="tel" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <small class="form-text text-muted m-t-0">С вами свяжется наш менеджер, чтобы подтвердить заказ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Закрыть окно</button>
+                        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal" data-toggle="modal" data-target="#successModal">Оформить заказ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="#">
+                    <div class="modal-header">
+                        <ul class="modal-steps">
+                            <li>
+                                1. Расчет стоимости
+                            </li>
+                            <li>
+                                <div class="mdi mdi-chevron-right"></div>
+                            </li>
+                            <li>
+                                2. Оформление заказа
+                            </li>
+                            <li>
+                                <div class="mdi mdi-chevron-right"></div>
+                            </li>
+                            <li class="success">
+                                <i class="mdi mdi-check"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="calc-success">
+                            <div class="calc-success-icon">
+                                <img src="public/images/check.png" alt="" width="80px;">
+                            </div>
+                            <h2 class="calc-success-title" id="successModalTitle">Заказ <strong>№239</strong> успешно оформлен</h2>
+                            <div class="calc-success-description">
+                                <p>В ближайщее время с вами свяжется <br> наш менеджер и подвердит заказ</p>
+                            </div>
+                            <div class="calc-success-receipt">
+                                <div class="calc-success-receipt-description">На почту отправлена информация о заказе. <br>Ниже вы можете скачать счёт-квитанцию на оплату</div>
+                                <a href="#">
+                                    <span class="mdi mdi-file-pdf"></span>
+                                    Реквизиты на оплату угля Bau-Bau
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-xs-center">
+                        <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Закрыть окно</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

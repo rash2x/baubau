@@ -1,0 +1,76 @@
+.steps {
+  margin-top: 30px;
+  position: relative;
+  display: none;
+
+  table {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.steps-dash {
+  width: 100%;
+  border-top: 2px dashed #cccccc;
+  position: absolute;
+  top: 8px;
+}
+
+.step {
+  background: #fff;
+  width: 30px;
+
+  position: relative;
+  z-index: 3;
+  margin-left: -40px;
+
+  text-align: center;
+
+  > span {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    display: inline-block;
+    width: 20px; height: 20px;
+  }
+
+  &.step-1 {
+    margin-left: 0;
+
+    > span {
+      background-image: url('/public/images/step-1.png');
+    }
+  }
+
+  &.step-2 > span {
+    background-image: url('/public/images/step-2.png');
+  }
+
+  &.step-3 > span {
+    background-image: url('/public/images/step-3.png');
+  }
+
+  &.step-4 > span {
+    background-image: url('/public/images/step-4.png');
+  }
+
+  &.step-5 {
+    float: right;
+
+    .step-fire {
+      background: url('/public/images/step-5-fire.png') no-repeat center;
+      background-size: auto 100%;
+      width: 17px; height: 20px;
+
+      position: absolute;
+      top: -24px; left: 6px;
+    }
+
+    > span {
+      background-image: url('/public/images/step-5.png');
+    }
+  }
+}

@@ -2,3 +2,151 @@
 //
 // Copy variables from `_variables.bootstrap` to this file to override default values
 // without modifying source files.
+
+
+$highlighted: #fdf6ed;
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:      12 !default;
+$grid-gutter-width: 52px !default;
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark:                 #373a3c !default;
+$gray:                      #55595c !default;
+$gray-light:                #666666 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f6f6f6 !default;
+
+$brand-primary:             #e9332b !default;
+$brand-success:             #5cb85c !default;
+$brand-info:                #5bc0de !default;
+$brand-warning:             #f0ad4e !default;
+$brand-danger:              #d9534f !default;
+$brand-inverse:             $gray-dark !default;
+
+
+$body-color: #000 !default;
+$link-color: #1f8df4 !default;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+
+
+$font-size-h1: 2rem !default;
+$font-size-h2: 1.5rem !default;
+$font-size-h3: 1.25rem !default;
+$font-size-h4: 1.25rem !default;
+$font-size-h5: 1rem !default;
+$font-size-h6: 1rem !default;
+
+$display1-size: 6rem !default;
+$display2-size: 5.5rem !default;
+$display3-size: 4.5rem !default;
+$display4-size: 2.625rem !default;
+
+$lead-font-size:   1.125rem !default;
+$lead-font-weight: 400 !default;
+$headings-line-height:   1.1 !default;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-padding-x:                  1rem !default;
+$btn-padding-y:                  .4375rem !default;
+$btn-line-height:                1.25 !default;
+$btn-font-weight:                500 !default;
+$btn-box-shadow:                 inset 0 3px 5px rgba(0,0,0,.1)!default;
+$btn-active-box-shadow:          inset 0 5px 7px rgba(0,0,0,.15) !default;
+
+$btn-padding-x-sm:               0.8rem !default;
+$btn-padding-y-sm:               .4115rem !default;
+
+$btn-padding-x-lg:               1.25rem !default;
+$btn-padding-y-lg:               .5rem !default;
+
+$btn-block-spacing-y:            .5rem !default;
+$btn-toolbar-margin:             .5rem !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             $btn-primary-bg !default;
+
+$btn-secondary-color:            $gray-dark !default;
+$btn-secondary-bg:               #fff !default;
+$btn-secondary-border:           #e3e3e3 !default;
+
+
+// Tags
+
+$tag-default-bg:            $gray-light !default;
+$tag-primary-bg:            $brand-primary !default;
+$tag-success-bg:            $brand-success !default;
+$tag-info-bg:               $brand-info !default;
+$tag-warning-bg:            $brand-warning !default;
+$tag-danger-bg:             $brand-danger !default;
+
+$tag-color:                 #fff !default;
+$tag-link-hover-color:      #fff !default;
+$tag-font-size:             15px !default;
+$tag-font-weight:           500 !default;
+$tag-padding-x:             .7em !default;
+$tag-padding-y:             .35em !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-radius:          .1875rem !default;
+$border-radius-lg:       .25rem !default;
+$border-radius-sm:       .125rem !default;
+
+
+// Carousel
+
+$carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6) !default;
+
+$carousel-control-color:                      #fff !default;
+$carousel-control-width:                      15% !default;
+$carousel-control-sm-up-size:                 30px !default;
+$carousel-control-opacity:                    .5 !default;
+$carousel-control-font-size:                  20px !default;
+
+$carousel-indicators-width:                   60% !default;
+
+$carousel-indicator-size:                     10px !default;
+$carousel-indicator-active-size:              12px !default;
+$carousel-indicator-active-bg:                #fff !default;
+$carousel-indicator-border-color:             #fff !default;
+
+$carousel-caption-width:                      70% !default;
+$carousel-caption-sm-up-width:                60% !default;
+$carousel-caption-color:                      #fff !default;
+
+$carousel-icon-width:                         20px !default;
+
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:         20px 32px 16px !default;
+
+$modal-dialog-margin:         10px !default;
+$modal-dialog-sm-up-margin-y: 30px !default;
+
+$modal-title-padding:         16px 32px !default;

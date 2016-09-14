@@ -1,0 +1,92 @@
+.footer {
+  margin-top: 70px
+}
+
+.footer-bottom {
+  @include clearfix();
+
+  background: #191E25 url('/public/images/pattern.png') repeat;
+
+  margin-top: 70px;
+  padding: 18px 0;
+  position: relative;
+
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+.footer-nav {
+  nav {
+    display: inline-block;
+    margin-left: -10px;
+
+    a {
+      padding: 6px 10px;
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    position: absolute;
+    z-index: 2;
+    top: 18px; left: 0; right: 0; bottom: 0;
+
+    text-align: center;
+
+    nav {
+      a {
+        padding: 6px 20px;
+      }
+    }
+  }
+
+
+}
+
+.vk-group {
+  margin-top: 12px;
+  position: relative;
+  z-index: 3;
+
+  .btn {
+    background: #5e81a8;
+
+    padding: 2px 14px 0 10px;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    &:hover {
+      background: #49709b;
+    }
+
+    .mdi:before {
+      font-size: 32px;
+      vertical-align: middle;
+      top: -2px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    margin-top: -24px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.copyright {
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: 1200px) {
+    padding: 6px 0;
+  }
+}
+
+
+

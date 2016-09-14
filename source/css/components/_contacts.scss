@@ -1,0 +1,110 @@
+.contacts {
+
+}
+
+.contacts-map {
+  margin-bottom: 40px;
+
+  img {
+    max-width: 100%;
+  }
+
+  > div {
+    height: 320px;
+  }
+}
+
+.contacts-address {
+
+}
+.contacts-address-label,
+.contacts-phone-label,
+.contacts-schedule-label {
+  font-size: 18px;
+}
+
+.contacts-address-value {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.contacts-phone {
+  margin-top: 35px;
+}
+
+.contacts-phone-value {
+  @extend .display-4;
+
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+
+  @media (max-width: 544px) {
+    font-size: 2rem;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.contacts-phone-email {
+  font-size: 18px;
+
+  .mdi:before {
+    color: $gray-light;
+    font-size: 24px;
+  }
+}
+
+.contacts-schedule {
+  margin-top: 35px;
+}
+
+.contacts-schedule-table {
+  border-radius: $border-radius;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  max-width: 410px;
+
+  margin-top: 10px;
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  td,
+  th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  th {
+    background: $gray-lightest;
+    border-bottom: $gray-lighter;
+
+    font-weight: 500;
+
+    &.active {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0; right: 0; bottom: 0;
+
+        border-bottom: 3px solid $brand-primary;
+      }
+    }
+  }
+
+  .mdi:before {
+    font-size: 24px;
+  }
+}

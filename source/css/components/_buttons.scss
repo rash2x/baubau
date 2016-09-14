@@ -1,0 +1,22 @@
+.btn {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  white-space: normal;
+
+  &:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &.active {
+    &,
+    &:hover,
+    &:focus {
+      background: #fdf6ed;
+      border: 1px solid #fae0c5;
+      box-shadow: none;
+    }
+  }
+}
+
+.btn-sm {
+  font-size: 15px;
+}

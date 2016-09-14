@@ -1,4 +1,31 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&subset=cyrillic-ext';
 @import "mdi/materialdesignicons";
 @import "bootstrap/bootstrap";
+@import "royalslider/royalslider";
 
+@import "components/about";
+@import "components/box";
+@import "components/buttons";
+@import "components/contacts";
+@import "components/calc";
+@import "components/delivery";
+@import "components/footer";
+@import "components/forms";
+@import "components/header";
+@import "components/middle";
+@import "components/modal";
+@import "components/page";
 @import "components/product";
+@import "components/promo";
+@import "components/requisites";
+@import "components/row";
+@import "components/type";
+@import "components/section";
+@import "components/steps";
+
+
+body,
+input,
+button {
+  letter-spacing: -0.5px;
+}

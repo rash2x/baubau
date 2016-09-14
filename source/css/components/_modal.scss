@@ -1,0 +1,33 @@
+.modal-steps {
+  @include list-unstyled();
+  @include clearfix();
+
+  margin-bottom: 0;
+
+  li {
+    display: inline-block;
+    color: #888888;
+    font-weight: 500;
+
+    &.active {
+      color: #000;
+    }
+
+    &.success {
+      color: $brand-success;
+
+      .mdi {
+        position: relative;
+        top: 2px;
+
+        &:before {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .modal-title {
+    font-weight: 500;
+  }
+}

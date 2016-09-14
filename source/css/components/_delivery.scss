@@ -1,0 +1,20 @@
+.delivery {
+  .calc-block {
+    margin-top: 50px;
+
+    .calc-title {
+      max-width: 360px;
+    }
+  }
+}
+
+.delivery-dellin {
+  background: $highlighted;
+  border-radius: $border-radius;
+  padding: 20px;
+
+  .btn {
+    background: #fff;
+    border: 1px solid #fcc14e;
+  }
+}

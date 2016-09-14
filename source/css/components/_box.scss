@@ -1,0 +1,42 @@
+.box {
+  text-align: center;
+
+  &.disabled {
+    .box-title,
+    .box-description,
+    .box-icon img {
+      opacity: 0.3;
+    }
+  }
+}
+
+.box-icon {
+  position: relative;
+  height: 90px;
+
+  line-height: 90px;
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
+.box-tag {
+  width: 100%;
+
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+
+  text-align: center;
+  line-height: 1;
+}
+
+.box-title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.box-description {
+  font-size: 0.9375rem;
+}

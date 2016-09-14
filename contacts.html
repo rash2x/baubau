@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Контактная информация | baubau-coal.com</title>
+    <link rel="stylesheet" href="public/core.css">
+</head>
+<body>
+    <header class="header">
+        <div class="sales">
+            <div class="sales-label">Отдел продаж</div>
+            <div class="sales-phone">
+                <a href="tel:+78125215151">+7 812 521 51 51</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-nav">
+
+                <div class="logo">
+                    <div class="logo-icon">
+                        <a href="/" class="logo">
+                            <img src="public/images/logo.png" alt="" width="200">
+                        </a>
+                    </div>
+                    <div class="nav nav-left">
+                        <a href="#">Купить</a>
+                        <a href="#">О продукте</a>
+                    </div>
+                    <nav class="nav nav-right">
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#" class="active">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="middle">
+        <div class="page">
+            <div class="page-head">
+                <div class="container">
+                    <h1 class="page-title">Контактная информация</h1>
+                </div>
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts-map">
+                        <div id="google-map"></div>
+                        <script>
+                            function initMap() {
+
+                                // Specify features and elements to define styles.
+                                var styleArray = [
+                                    {
+                                        "featureType": "administrative",
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [
+                                            {
+                                                "color": "#444444"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "administrative.country",
+                                        "elementType": "labels.text",
+                                        "stylers": [
+                                            {
+                                                "visibility": "on"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "administrative.locality",
+                                        "elementType": "labels.text",
+                                        "stylers": [
+                                            {
+                                                "weight": "1.43"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "administrative.locality",
+                                        "elementType": "labels.text.stroke",
+                                        "stylers": [
+                                            {
+                                                "weight": "2.26"
+                                            },
+                                            {
+                                                "visibility": "on"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "landscape",
+                                        "elementType": "all",
+                                        "stylers": [
+                                            {
+                                                "color": "#f2f2f2"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "poi",
+                                        "elementType": "all",
+                                        "stylers": [
+                                            {
+                                                "visibility": "off"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "road",
+                                        "elementType": "all",
+                                        "stylers": [
+                                            {
+                                                "saturation": -100
+                                            },
+                                            {
+                                                "lightness": 45
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "road.highway",
+                                        "elementType": "all",
+                                        "stylers": [
+                                            {
+                                                "visibility": "simplified"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "road.highway",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [
+                                            {
+                                                "color": "#bdbdbd"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "road.highway.controlled_access",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [
+                                            {
+                                                "color": "#ff0000"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "road.arterial",
+                                        "elementType": "labels.icon",
+                                        "stylers": [
+                                            {
+                                                "visibility": "off"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "transit",
+                                        "elementType": "all",
+                                        "stylers": [
+                                            {
+                                                "visibility": "off"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "water",
+                                        "elementType": "all",
+                                        "stylers": [
+                                            {
+                                                "color": "#ff6865"
+                                            },
+                                            {
+                                                "visibility": "on"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "featureType": "water",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [
+                                            {
+                                                "color": "#e83930"
+                                            }
+                                        ]
+                                    }
+                                ];
+
+                                // Create a map object and specify the DOM element for display.
+                                var map = new google.maps.Map(document.getElementById('google-map'), {
+                                    center: {lat: -34.397, lng: 150.644},
+                                    scrollwheel: false,
+                                    // Apply the map style array to the map.
+                                    styles: styleArray,
+                                    zoom: 8
+                                });
+                            }
+
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP65VLnU3jEtoUd01CvlrYb1SpQk_l7ig&callback=initMap" async defer></script>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-8 col-md-7">
+                            <div class="contacts-address">
+                                <div class="contacts-address-label">Главный офис</div>
+                                <div class="contacts-address-value">198215, Москва, ул. Мичуринская, д.16, офис 1</div>
+                            </div>
+                            <div class="contacts-phone">
+                                <div class="contacts-phone-label">Связаться с нами</div>
+                                <div class="contacts-phone-value">
+                                    <a href="tel:+78125215151">+7 812 521 51 51</a>
+                                </div>
+                                <div class="contacts-phone-email">
+                                    <a href="mailto:help@baubau-coal.com" target="_blank">
+                                        <i class="mdi mdi-email"></i>
+                                        help@baubau-coal.com
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contacts-schedule">
+                                <div class="contacts-schedule-label">График работы</div>
+                                <div class="contacts-schedule-table">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th>ПН</th>
+                                            <th>ВТ</th>
+                                            <th class="active">СР</th>
+                                            <th>ЧТ</th>
+                                            <th>ПТ</th>
+                                            <th>СБ</th>
+                                            <th>ВС</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>09:00<br>20:00</td>
+                                            <td>09:00<br>20:00</td>
+                                            <td>09:00<br>20:00</td>
+                                            <td>09:00<br>20:00</td>
+                                            <td>09:00<br>20:00</td>
+                                            <td>
+                                                <i class="mdi mdi-close"></i>
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-close"></i>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-5">
+                            <div class="m-t-3 hidden-md-up"></div>
+                            <div class="requisites">
+                                <div class="requisites-label">Реквизиты</div>
+                                <div class="requisites-value">
+                                    <p>
+                                        ООО «БАУ БАУ КОАЛ» <br>
+                                        ИНН 7805638857 <br>
+                                        КПП 780501001 <br>
+                                        ОГРН 1137847488756 <br>
+                                        Р/СЧ 40702810132340000055
+                                    </p>
+                                    <p>Филиал «Санкт-Петербургский» <br>
+                                        ОАО «АЛЬФА-БАНК» <br>
+                                        г. Санкт-Петербург</p>
+                                    <img src="public/images/alphabank.png" alt="Альфа Банк" height="30">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="calc-bar wide">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="calc-btn">
+                            <button class="btn btn-lg btn-primary" type="button" data-toggle="modal" data-target="#orderModal">Рассчитать стоимость с доставкой и заказать</button>
+                        </div>
+                        <div class="calc-description">
+                            <i class="mdi mdi-truck"></i>
+                            Доставляем уголь по всей России
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-6">
+                        <div class="calc-call">
+                            <div class="calc-call-label">Остались вопросы? Позвоните нам</div>
+                            <strong class="calc-call-value display-4">+7 812 521 51 51</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright pull-lg-left">© 2016 Кальянные угли BAU BAU</div>
+                <br class="hidden-md-down hidden-xl-up">
+                <div class="pull-lg-left footer-nav">
+                    <nav class="nav nav-inline">
+                        <a href="#">Купить</a>
+                        <a href="#">О продукте</a>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Контакты</a>
+                    </nav>
+                </div>
+                <div class="vk-group pull-lg-right">
+                    <a href="https://vk.com" class="btn btn-vk" target="_blank">
+                        <i class="mdi mdi-vk"></i>
+                        Группа Вконтакте
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

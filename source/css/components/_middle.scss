@@ -1,0 +1,7 @@
+.middle {
+  padding-top: 26px;
+
+  @media (min-width: 544px) {
+    padding-top: 60px;
+  }
+}
